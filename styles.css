@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333; /* Color de fondo oscuro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 90px;
+    color: #fff;
+    text-shadow: 0 0 5px #0c6dff, 
+                 0 0 10px #0e0ae2, 
+                 0 0 15px #1461b9, 
+                 0 0 20px #1023d4;
+}
+
+.card {
+    background-color: transparent; /* Sin fondo */
+    border: 2px solid #ccc; /* Bordes con un grosor definido */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px; /* Ajusta el tamaño según sea necesario */
+    display: inline-block;
+}
+
+.card p {
+    font-size: 20px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    margin: 10px 0; /* Espaciado arriba y abajo */
+    line-height: 1.5; /* Espaciado entre líneas */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumentar tamaño en el medio de la animación */
+    }
+    100% {
+        transform: scale(1); /* Regresar al tamaño original */
+    }
+}
+
+.image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px; /* Esquinas redondeadas para la imagen */
+    animation: pulse 1.5s infinite; /* Aplicar la animación de palpitación */
+}
+
+
+.surpriseButton {
+    padding: 15px 30px; /* Aumentar el padding para un botón más grande */
+    font-size: 18px; /* Aumentar el tamaño de la fuente */
+    cursor: pointer;
+    background-color: #2552cf; /* Color de fondo vibrante */
+    color: white; /* Color del texto */
+    text-decoration: none;
+    border-radius: 25px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto de transición */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+}
+
+.surpriseButton:hover {
+    background-color: #e91e63; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Agrandar ligeramente el botón al pasar el ratón */
+}
+
+.surpriseButton:active {
+    transform: scale(0.95); /* Efecto de pulsación al hacer clic */
+}
+
+
+.highlight {
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.hidden {
+    display: none; /* Ocultar el botón */
+}
+

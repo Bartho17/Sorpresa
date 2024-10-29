@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('star.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 20px auto; /* Centrado automático */
+    border-radius: 10px;
+    padding: 40px; /* Aumenté el padding para dar más espacio interno */
+    width: 100%; /* Ajusta el ancho del contenedor */
+    height: 90%;
+    max-width: 1000px; /* Ancho máximo del contenedor */
+}
+
+.styled-header {
+    font-size: 40px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación centrada */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Sombra para mayor contraste */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    animation: glow 1.5s infinite alternate; /* Animación de resplandor */
+}
+
+/* Efecto de resplandor */
+@keyframes glow {
+    0% { text-shadow: 0 0 5px rgba(255, 255, 255, 1); }
+    100% { text-shadow: 0 0 20px rgba(255, 255, 255, 1); }
+}
+.card {
+    margin-top: 20px;
+}
+
+.carousel {
+    position: relative;
+    height: 100%; /* Altura del carrusel */
+    overflow: hidden; /* Oculta texto fuera del área */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap'); /* Importar fuente Space Mono */
+
+.styled-paragraph {
+    font-size: 22px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación centrada */
+    font-family: 'Space Mono', monospace; /* Tipo de letra Space Mono */
+}
+
+.letter {
+    display: inline-block; /* Permite animación en cada letra */
+    opacity: 0; /* Comienza oculto */
+    transform: translateY(20px); /* Desplazamiento inicial */
+    animation: reveal 0.5s forwards; /* Animación de despliegue */
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1; /* Se hace visible */
+        transform: translateY(0); /* Regresa a la posición original */
+    }
+}
+
+
+
+.image {
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+}
+
+audio {
+    display: none;
+}
